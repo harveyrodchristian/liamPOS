@@ -1,10 +1,7 @@
 # liamPOS
 
-Thought for 2sI'll create a comprehensive README for the Minglanilla Liam Store POS system.
 
-Made some changesv22I've created a comprehensive README file for your POS system! Here's what's included:
-
-## **README Sections:**
+## **README:**
 
 1. **Overview** - Quick introduction to the system
 2. **Features List** - All major features organized by category
