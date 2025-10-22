@@ -40,4 +40,3 @@ Made some changesv22I've created a comprehensive README file for your POS system
 - **Complete keyboard shortcuts** and tips
 
 
-The README is production-ready and can be displayed on GitHub or included in your project documentation!
