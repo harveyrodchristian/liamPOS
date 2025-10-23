@@ -354,7 +354,7 @@
     });
 
     function loadStatistics() {
-      fetch('get_statistics.php')
+      fetch('api/get_statistics.php')
         .then(res => res.json())
         .then(data => {
           if (data.status === 'success') {
@@ -373,7 +373,7 @@
       const dateFrom = document.getElementById('dateFrom').value;
       const dateTo = document.getElementById('dateTo').value;
       
-      fetch(`get_sales.php?from=${dateFrom}&to=${dateTo}`)
+      fetch(`api/get_sales.php?from=${dateFrom}&to=${dateTo}`)
         .then(res => res.json())
         .then(data => {
           const tbody = document.querySelector('#salesTable tbody');
@@ -403,7 +403,7 @@
     }
 
     function loadTopProducts() {
-      fetch('get_top_products.php')
+      fetch('api/get_top_products.php')
         .then(res => res.json())
         .then(data => {
           const tbody = document.querySelector('#topProductsTable tbody');

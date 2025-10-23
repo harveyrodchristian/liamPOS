@@ -7,11 +7,12 @@ try {
     $stmt = $conn->query("
         SELECT 
             p.name,
-            p.category,
+            c.name as category,
             p.stock,
             COALESCE(SUM(si.quantity), 0) as quantity_sold,
             COALESCE(SUM(si.quantity * si.price), 0) as revenue
         FROM products p
+        LEFT JOIN categories c ON p.category_id = c.id
         LEFT JOIN sale_items si ON p.id = si.product_id
         LEFT JOIN sales s ON si.sale_id = s.id
         WHERE s.sale_date >= DATE_SUB(NOW(), INTERVAL 30 DAY) OR s.sale_date IS NULL

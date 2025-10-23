@@ -853,7 +853,7 @@
       checkoutBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
       checkoutBtn.disabled = true;
 
-      fetch('save_sale.php', {
+      fetch('includes/save_sale.php', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ items: cart, total, amountPaid, change })
